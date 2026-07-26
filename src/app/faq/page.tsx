@@ -8,9 +8,9 @@ export const metadata: Metadata = generateInfoMetadata('FAQ')
 export default function FaqPage() {
   return (
     <InfoPage title="Frequently Asked Questions">
-      <h2 className="text-heading-h4 font-semibold text-grey-90">Is NovaBet custodial?</h2>
+      <h2 className="text-heading-h4 font-semibold text-grey-90">Is DonLeo Bet custodial?</h2>
       <p>
-        No. NovaBet never holds your funds. You connect your own wallet and
+        No. DonLeo Bet never holds your funds. You connect your own wallet and
         every bet is a direct on-chain transaction signed by you.
       </p>
 
@@ -22,7 +22,7 @@ export default function FaqPage() {
 
       <h2 className="text-heading-h4 font-semibold text-grey-90">What chains are supported?</h2>
       <p>
-        NovaBet supports Polygon, Gnosis, Chiliz, Base and BNB Chain. You can
+        DonLeo Bet supports Polygon, Gnosis, Chiliz, Base and BNB Chain. You can
         switch the active network from the balance dropdown in the header.
       </p>
 

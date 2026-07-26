@@ -14,17 +14,22 @@ const Logo: React.FC<LogoProps> = (props) => {
     <Href to="/" className={cx('flex items-center', className)}>
       <svg
         className="h-full"
-        width="120"
-        height="20"
-        viewBox="0 0 120 20"
+        width="140"
+        height="22"
+        viewBox="0 0 140 22"
         xmlns="http://www.w3.org/2000/svg"
       >
+        <circle cx="10" cy="11" r="9" fill="#FF6B00" />
         <path
-          d="M9.5 2.5 L14.5 17.5 L11 17.5 L10.1 14.3 L5.4 14.3 L4.5 17.5 L1 17.5 L6 2.5 Z M7.8 11.4 L9.5 5.7 L11.2 11.4 Z"
+          d="M6.2 6.5 L10 4 L13.8 6.5 L13.8 15.5 L10 18 L6.2 15.5 Z"
+          fill="#111111"
+        />
+        <path
+          d="M10 7.5 L11.5 10 L10 12.5 L8.5 10 Z"
           fill="#FF6B00"
         />
-        <text x="18" y="15" fontFamily="Inter, sans-serif" fontSize="14" fontWeight="800" fill="#EBEBEB" letterSpacing="0.5">NOVA</text>
-        <text x="58" y="15" fontFamily="Inter, sans-serif" fontSize="14" fontWeight="500" fill="#7E7E7E" letterSpacing="0.5">BET</text>
+        <text x="24" y="16" fontFamily="Inter, sans-serif" fontSize="15" fontWeight="800" fill="#EBEBEB" letterSpacing="0.5">DONLEO</text>
+        <text x="92" y="16" fontFamily="Inter, sans-serif" fontSize="15" fontWeight="500" fill="#7E7E7E" letterSpacing="0.5">BET</text>
       </svg>
     </Href>
   )

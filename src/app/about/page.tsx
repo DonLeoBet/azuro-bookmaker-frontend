@@ -7,9 +7,9 @@ export const metadata: Metadata = generateInfoMetadata('About')
 
 export default function AboutPage() {
   return (
-    <InfoPage title="About NovaBet">
+    <InfoPage title="About DonLeo Bet">
       <p>
-        NovaBet is a premium on-chain sportsbook built on the Azuro protocol.
+        DonLeo Bet is a premium on-chain sportsbook built on the Azuro protocol.
         Every bet is settled transparently on-chain, with no central custodian
         holding your funds. You keep full custody of your wallet at all times.
       </p>
@@ -19,7 +19,7 @@ export default function AboutPage() {
         cash-out is available on selected events.
       </p>
       <p>
-        NovaBet is non-custodial: connect your wallet, pick your selections, and
+        DonLeo Bet is non-custodial: connect your wallet, pick your selections, and
         place a bet directly from your account. Winnings are paid out instantly
         once the event resolves.
       </p>

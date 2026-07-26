@@ -9,7 +9,7 @@ export default function PolicyPage() {
   return (
     <InfoPage title="Privacy Policy">
       <p>
-        NovaBet is a non-custodial, on-chain application. We do not collect or
+        DonLeo Bet is a non-custodial, on-chain application. We do not collect or
         store personal data beyond what is strictly necessary to operate the
         interface.
       </p>
@@ -24,7 +24,7 @@ export default function PolicyPage() {
         and collapsed-market settings. No tracking cookies are placed.
       </p>
       <p>
-        NovaBet does not sell or share user data with third parties.
+        DonLeo Bet does not sell or share user data with third parties.
       </p>
     </InfoPage>
   )
