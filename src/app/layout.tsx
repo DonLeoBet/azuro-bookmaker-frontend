@@ -21,8 +21,11 @@ const inter = Inter({ subsets: [ 'latin' ] })
 
 export const metadata: Metadata = {
   metadataBase: new URL(constants.baseUrl),
-  title: 'Betting Example',
-  description: '',
+  title: {
+    default: 'NovaBet — On-Chain Sportsbook',
+    template: '%s · NovaBet',
+  },
+  description: 'NovaBet is a premium on-chain sportsbook. Bet on football, basketball, tennis and more with instant settlement and full transparency.',
 }
 
 export default async function RootLayout({

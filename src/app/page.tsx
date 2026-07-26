@@ -10,6 +10,7 @@ import Navbar from 'compositions/events/Navbar/Navbar'
 import FilteredLeagues from 'compositions/events/FilteredLeagues/FilteredLeagues'
 import UniqueEvents from 'compositions/events/UniqueEvents/UniqueEvents'
 import HotComboTips from 'compositions/events/HotComboTips/HotComboTips'
+import Hero from 'compositions/Hero/Hero'
 
 
 const Sports: React.FC = () => {
@@ -54,6 +55,7 @@ const Sports: React.FC = () => {
 export default function TopPage() {
   return (
     <>
+      <Hero />
       <TopEvents />
       <Navbar>
         <Sports />
