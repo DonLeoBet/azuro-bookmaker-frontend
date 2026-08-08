@@ -10,9 +10,9 @@ export function FootballHeader({ onBetslipClick }: { onBetslipClick: () => void 
     <header
       className="z-50 flex h-[var(--ft-header-h)] w-full items-center border-b border-[var(--ft-line)] bg-[var(--ft-panel)] px-4"
     >
-      <Link href="/football" className="mr-6 h-6">
+      <div className="mr-6 h-6">
         <Logo />
-      </Link>
+      </div>
 
       <nav className="mr-6 hidden items-center gap-1 lg:flex">
         {
