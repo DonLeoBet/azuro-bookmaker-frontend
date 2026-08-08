@@ -4,6 +4,7 @@ import { useState } from 'react'
 
 import { FootballHeader } from './FootballHeader'
 import { FootballSidebar } from './FootballSidebar'
+import { FootballRightSidebar } from './FootballRightSidebar'
 import { FootballTicker } from './FootballTicker'
 import { BetslipDrawer } from './BetslipDrawer'
 
@@ -27,10 +28,11 @@ export function FootballShell({ children }: { children: React.ReactNode }) {
         <main className="min-w-0 flex-1 overflow-y-auto p-4">
           {children}
         </main>
-        <BetslipDrawer isOpen={betslipOpen} onClose={() => setBetslipOpen(false)} />
+        <FootballRightSidebar />
       </div>
 
       <FootballTicker />
+      <BetslipDrawer isOpen={betslipOpen} onClose={() => setBetslipOpen(false)} />
     </div>
   )
 }

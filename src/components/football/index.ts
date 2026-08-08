@@ -1,6 +1,7 @@
 export { FootballShell } from './Shell'
 export { FootballHeader } from './FootballHeader'
 export { FootballSidebar } from './FootballSidebar'
+export { FootballRightSidebar } from './FootballRightSidebar'
 export { FootballTicker } from './FootballTicker'
 export { BetslipDrawer } from './BetslipDrawer'
 export { FeaturedMatch } from './FeaturedMatch'
