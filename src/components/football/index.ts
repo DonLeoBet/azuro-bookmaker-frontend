@@ -1,3 +1,4 @@
+export { BrandLogo } from './BrandLogo'
 export { FootballShell } from './Shell'
 export { FootballHeader } from './FootballHeader'
 export { FootballSidebar } from './FootballSidebar'

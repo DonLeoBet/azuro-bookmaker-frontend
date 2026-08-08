@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { BrandLogo } from 'components/football/BrandLogo'
 import { mockLeagues } from 'lib/football/mock'
 
 
@@ -16,11 +17,7 @@ export function TerminalHeader() {
       className="z-50 flex h-[var(--ft-header-h)] w-full items-center border-b border-[var(--ft-line)] bg-[var(--ft-panel)] px-4"
     >
       <Link href="/" className="mr-6 flex h-7 items-center">
-        <img
-          src="/images/donleo-logo-light.png"
-          alt="DonLeo.bet"
-          className="h-7 w-auto"
-        />
+        <BrandLogo variant="full" theme="light" className="h-7" />
       </Link>
 
       <nav className="mr-6 hidden items-center gap-1 lg:flex">

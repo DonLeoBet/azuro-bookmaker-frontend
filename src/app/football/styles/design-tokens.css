@@ -1,45 +1,46 @@
 /*
   Football Intelligence Terminal — Design Tokens
-  Uses the existing DonLeo.bet brand colors and adds a scoped
-  football terminal palette. Scoped to .football-scope so it never
-  bleeds into the Azuro sportsbook.
+  Premium web3 analytics direction:
+  - dark background
+  - white typography
+  - cyan/electric blue as primary accent
+  - orange only as a secondary action accent
+  Scoped to .football-scope so it never bleeds into the Azuro sportsbook.
 */
 
 .football-scope {
-  /* DonLeo brand (from tailwind.config.ts) */
-  --ft-brand-70: #B84200;
-  --ft-brand-60: #E66001;
-  --ft-brand-50: #FF6B00;
-  --ft-brand-15: #3A2B20;
-  --ft-brand-10: #642900;
-  --ft-brand-5: #331500;
+  /* Primary accent: cyan / electric blue */
+  --ft-primary: #00E0FF;
+  --ft-primary-dark: #00C8E6;
+  --ft-primary-soft: rgba(0, 224, 255, 0.125);
+  --ft-primary-glow: rgba(0, 224, 255, 0.2);
 
-  /* Surfaces */
-  --ft-bg: #111111;
-  --ft-bg-elevated: #171717;
-  --ft-panel: #1F1F1F;
-  --ft-card: #242424;
-  --ft-hover: #2E2E2E;
+  /* Secondary accent: orange for rare actions / CTAs */
+  --ft-secondary: #FF6B00;
+  --ft-secondary-dark: #E66001;
+  --ft-secondary-soft: rgba(255, 107, 0, 0.125);
+
+  /* Surfaces — deep, premium dark */
+  --ft-bg: #05050A;
+  --ft-bg-elevated: #08080F;
+  --ft-panel: #0D0D14;
+  --ft-card: #11111A;
+  --ft-hover: #1A1A26;
 
   /* Lines */
-  --ft-line: #3B3B3B;
-  --ft-line-soft: #2E2E2E;
+  --ft-line: #232334;
+  --ft-line-soft: #181824;
 
   /* Typography */
-  --ft-text: #EBEBEB;
-  --ft-muted: #ADADAD;
-  --ft-dim: #7E7E7E;
+  --ft-text: #FFFFFF;
+  --ft-muted: #A0A0B0;
+  --ft-dim: #6C6C80;
 
-  /* Accents */
-  --ft-primary: var(--ft-brand-50);
-  --ft-primary-dark: var(--ft-brand-60);
-  --ft-primary-soft: rgba(255, 107, 0, 0.125);
-  --ft-secondary: var(--ft-brand-10);
-  --ft-red: #F42E52;
-  --ft-red-soft: rgba(244, 46, 82, 0.125);
-  --ft-green: #3EFF8B;
+  /* State accents */
+  --ft-red: #FF4D6D;
+  --ft-red-soft: rgba(255, 77, 109, 0.125);
+  --ft-green: #39FFBA;
   --ft-gold: #EFB72A;
-  --ft-gray: #374151;
 
   /* Shell dimensions */
   --ft-header-h: 3.5rem;
@@ -65,7 +66,6 @@
   font-family: 'Inter', sans-serif;
   font-weight: 800;
   letter-spacing: 0.01em;
-  text-transform: uppercase;
 }
 
 .football-scope .ft-font-mono {
@@ -124,8 +124,9 @@
 }
 
 .football-scope .ft-tab-active {
-  background: var(--ft-brand-10);
+  background: var(--ft-primary-soft);
   color: var(--ft-text);
+  box-shadow: 0 0 12px var(--ft-primary-glow);
 }
 
 .football-scope .ft-tab-inactive {
@@ -149,6 +150,7 @@
   font-weight: 800;
   color: var(--ft-text);
   background: var(--ft-red);
+  box-shadow: 0 0 8px rgba(255, 77, 109, 0.25);
 }
 
 .football-scope .ft-finished-badge {
