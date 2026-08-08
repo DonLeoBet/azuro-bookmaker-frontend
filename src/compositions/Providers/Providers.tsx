@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import { usePathname } from 'next/navigation'
 import { type State } from 'wagmi'
 import { type ChainId } from '@azuro-org/toolkit'
 import { type Address } from 'viem'
@@ -23,21 +24,29 @@ type Props = {
 
 const Providers: React.CFC<Props> = (props) => {
   const { children, userAgent, initialState, initialChainId, initialLiveState } = props
+  const pathname = usePathname()
+  const isFootball = pathname?.startsWith('/football')
 
   return (
     <DeviceProvider userAgent={userAgent}>
       <SvgProvider>
         <IntlProvider locale="en">
-          <WagmiProvider initialState={initialState}>
-            <AzuroSDKProvider initialChainId={initialChainId} affiliate={process.env.NEXT_PUBLIC_AFFILIATE_ADDRESS as Address}>
-              <LiveProvider initialLiveState={initialLiveState}>
-                <OddsViewProvider>
-                  {children}
-                </OddsViewProvider>
-              </LiveProvider>
-              <NewFreeBetsChecker />
-            </AzuroSDKProvider>
-          </WagmiProvider>
+          {
+            isFootball ? (
+              children
+            ) : (
+              <WagmiProvider initialState={initialState}>
+                <AzuroSDKProvider initialChainId={initialChainId} affiliate={process.env.NEXT_PUBLIC_AFFILIATE_ADDRESS as Address}>
+                  <LiveProvider initialLiveState={initialLiveState}>
+                    <OddsViewProvider>
+                      {children}
+                    </OddsViewProvider>
+                  </LiveProvider>
+                  <NewFreeBetsChecker />
+                </AzuroSDKProvider>
+              </WagmiProvider>
+            )
+          }
         </IntlProvider>
         <div className="sr-only">
           <SvgSprite />
