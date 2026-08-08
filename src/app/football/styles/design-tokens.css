@@ -1,0 +1,179 @@
+/*
+  Football Intelligence Layer — Design Tokens
+  Hybrid of DonLeo.bet dark UI and VoetbalTussenstanden football clarity.
+  Scoped to .football-scope so it never bleeds into the Azuro sportsbook.
+*/
+
+.football-scope {
+  /* Surfaces */
+  --ft-bg: #0b0e14;
+  --ft-bg-elevated: #0e1118;
+  --ft-panel: #11151e;
+  --ft-card: #141925;
+  --ft-hover: #1a2030;
+
+  /* Lines */
+  --ft-line: #1e2736;
+  --ft-line-soft: #181e2a;
+
+  /* Typography */
+  --ft-text: #f1f5f9;
+  --ft-muted: #94a3b8;
+  --ft-dim: #475569;
+
+  /* Accents */
+  --ft-primary: #0eb5f5;
+  --ft-primary-dark: #0992cc;
+  --ft-primary-soft: rgba(14, 181, 245, 0.125);
+  --ft-secondary: #1b6fa8;
+  --ft-red: #ef4444;
+  --ft-red-soft: rgba(239, 68, 68, 0.125);
+  --ft-green: #22c55e;
+  --ft-gold: #f59e0b;
+  --ft-gray: #374151;
+
+  /* Motion */
+  --ft-transition: 150ms ease;
+  --ft-radius: 0.5rem;
+  --ft-radius-sm: 0.375rem;
+
+  background-color: var(--ft-bg);
+  color: var(--ft-text);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.football-scope h1,
+.football-scope h2,
+.football-scope h3,
+.football-scope .ft-font-display {
+  font-family: 'Oswald', 'Inter', sans-serif;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.football-scope .ft-font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Base components */
+.football-scope .ft-card {
+  background: var(--ft-card);
+  border: 1px solid var(--ft-line);
+  border-radius: var(--ft-radius);
+}
+
+.football-scope .ft-card:hover {
+  background: var(--ft-hover);
+  border-color: var(--ft-line);
+}
+
+.football-scope .ft-panel {
+  background: var(--ft-panel);
+  border: 1px solid var(--ft-line);
+  border-radius: var(--ft-radius);
+}
+
+.football-scope .ft-row {
+  display: flex;
+  align-items: center;
+  background: var(--ft-bg);
+  transition: background-color var(--ft-transition);
+}
+
+.football-scope .ft-row:hover {
+  background: var(--ft-hover);
+}
+
+.football-scope .ft-group-header {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.75rem 1rem;
+  background: var(--ft-panel);
+  border-bottom: 1px solid var(--ft-line);
+  border-radius: var(--ft-radius) var(--ft-radius) 0 0;
+}
+
+.football-scope .ft-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  border-radius: var(--ft-radius-sm);
+  padding: 0.375rem 0.875rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all var(--ft-transition);
+}
+
+.football-scope .ft-tab-active {
+  background: var(--ft-secondary);
+  color: var(--ft-text);
+}
+
+.football-scope .ft-tab-inactive {
+  color: var(--ft-muted);
+  border: 1px solid var(--ft-line);
+}
+
+.football-scope .ft-tab-inactive:hover {
+  color: var(--ft-text);
+  background: var(--ft-hover);
+}
+
+.football-scope .ft-live-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  border-radius: var(--ft-radius-sm);
+  padding: 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--ft-bg);
+  background: var(--ft-red);
+}
+
+.football-scope .ft-finished-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--ft-radius-sm);
+  padding: 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--ft-muted);
+  background: var(--ft-hover);
+}
+
+.football-scope .ft-time-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--ft-radius-sm);
+  padding: 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--ft-primary);
+  background: var(--ft-primary-soft);
+}
+
+.football-scope .ft-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: var(--ft-radius-sm);
+  padding: 0.125rem 0.375rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.football-scope .ft-score {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}

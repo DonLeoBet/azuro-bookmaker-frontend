@@ -79,6 +79,9 @@
       ],
       "pages/*": [
         "src/pages/*"
+      ],
+      "lib/*": [
+        "src/lib/*"
       ]
     },
     "plugins": [
