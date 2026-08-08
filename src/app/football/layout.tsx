@@ -1,5 +1,7 @@
 import './styles/design-tokens.css'
 
+import { FootballShell } from 'components/football'
+
 
 export default function FootballLayout({
   children,
@@ -7,8 +9,8 @@ export default function FootballLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="football-scope min-h-screen w-full bg-[var(--ft-bg)] text-[var(--ft-text)]">
+    <FootballShell>
       {children}
-    </div>
+    </FootballShell>
   )
 }

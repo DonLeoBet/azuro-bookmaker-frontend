@@ -32,6 +32,11 @@
   --ft-gold: #f59e0b;
   --ft-gray: #374151;
 
+  /* Shell dimensions */
+  --ft-header-h: 3.5rem;
+  --ft-ticker-h: 2.5rem;
+  --ft-sidebar-w: 14rem;
+
   /* Motion */
   --ft-transition: 150ms ease;
   --ft-radius: 0.5rem;
@@ -176,4 +181,19 @@
   font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-weight: 800;
   font-variant-numeric: tabular-nums;
+}
+
+/* Scrollbars */
+.football-scope ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.football-scope ::-webkit-scrollbar-track {
+  background: var(--ft-bg);
+}
+
+.football-scope ::-webkit-scrollbar-thumb {
+  background: var(--ft-line);
+  border-radius: 3px;
 }
