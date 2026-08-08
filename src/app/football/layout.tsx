@@ -1,16 +1,16 @@
 import './styles/design-tokens.css'
 
-import { FootballShell } from 'components/football'
+import { FootballTerminalShell } from 'components/football/terminal/TerminalShell'
 
 
 export default function FootballLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
-    <FootballShell>
+    <FootballTerminalShell>
       {children}
-    </FootballShell>
+    </FootballTerminalShell>
   )
 }
