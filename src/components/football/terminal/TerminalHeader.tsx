@@ -14,10 +14,11 @@ const topLinks = [
 export function TerminalHeader() {
   return (
     <header
-      className="z-50 flex h-[var(--ft-header-h)] w-full items-center border-b border-[var(--ft-line)] bg-[var(--ft-panel)] px-4"
+      className="z-50 flex h-[var(--ft-header-h)] w-full items-center border-b border-[var(--ft-line)] bg-[var(--ft-bg)] px-4"
     >
-      <Link href="/" className="mr-6 flex h-7 items-center">
+      <Link href="/" className="mr-6 flex h-7 items-center gap-2">
         <BrandLogo variant="full" theme="light" className="h-7" />
+        <span className="text-xl" aria-hidden="true">🚬</span>
       </Link>
 
       <nav className="mr-6 hidden items-center gap-1 lg:flex">

@@ -20,16 +20,16 @@
   --ft-secondary-dark: #E66001;
   --ft-secondary-soft: rgba(255, 107, 0, 0.125);
 
-  /* Surfaces — deep, premium dark */
-  --ft-bg: #05050A;
-  --ft-bg-elevated: #08080F;
-  --ft-panel: #0D0D14;
-  --ft-card: #11111A;
-  --ft-hover: #1A1A26;
+  /* Surfaces — pure black + subtle layers */
+  --ft-bg: #000000;
+  --ft-bg-elevated: #050505;
+  --ft-panel: #08080A;
+  --ft-card: #0B0B0D;
+  --ft-hover: #121214;
 
   /* Lines */
-  --ft-line: #232334;
-  --ft-line-soft: #181824;
+  --ft-line: #1C1C20;
+  --ft-line-soft: #111114;
 
   /* Typography */
   --ft-text: #FFFFFF;
